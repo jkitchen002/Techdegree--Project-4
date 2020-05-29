@@ -1,0 +1,26 @@
+.btn {
+    @include border(none);
+    @include size($w:100%);
+    @include margin ($top: 15px, $right: 10px);
+    @include padding($top:10px, $bottom:10px);
+    color: $white;
+    text-transform: uppercase;
+    border-radius: $border-radius;
+  }
+  
+  @each $button, $color in $button-colors{
+    .btn#{$button}{
+        background-color: $color;
+      &:hover{
+        background-color:lighten($color, 15%);
+      }
+      &:focus{
+        outline:none;
+      }
+      @media (min-width: 768px){
+        @include padding(10px, 30px);
+      }
+    }   
+  }
+  
+  

@@ -1,0 +1,37 @@
+//line height//
+$paragraphs: 1.45em;
+
+
+.nav {
+    padding-left: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  
+  .nav-link {
+    text-align: center;
+    border-radius: $border-radius;
+    padding: 10px 0;
+    display: block;
+    @include size ($w:100%);
+    transition: 
+      background-color .2s ease-in-out, 
+      color .2s ease-in-out;
+    &:visited{
+      color:lighten($primary-color-grey,35%);
+    }
+    &:hover {
+      color: $white;
+      background-color:$primary-color-grey;
+    }
+    @media (min-width: 768px) {
+      @include flex-basis;
+    }
+      
+  }

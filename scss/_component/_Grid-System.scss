@@ -1,0 +1,49 @@
+  .container {
+    @include padding($right: 10px, $left: 10px);
+    @media (min-width: 768px) {
+        max-width: 1400px;
+      }
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    @each $grid, $flex-b in $flex-basis{
+      #{$grid}{
+          flex-basis: $flex-b;
+      }
+    }
+  }
+  
+  [class^=col] {
+    margin-top: 10px;
+    @include flex-basis;
+    min-height: 25px;
+    padding: 10px;
+    border-radius: $border-radius;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+      + [class^=col] {
+        @include margin-left (10px);
+      }
+    }
+  }
+  
+  @each $grid, $color in $grid-colors{
+    .theme#{$grid}{
+        background-color: $color;
+    }
+  }
+  
+  .card {
+    @include flex-basis;
+  }
+  
+  

@@ -1,0 +1,19 @@
+.form {
+    @include flex-basis;
+  }
+  
+  .input{
+    @include form-display (block, 94%, 10px auto 0, 10px);
+    @include border(none, 5px solid #63cc82);
+    &:focus{
+      outline:none;
+    }
+  }
+  
+  .hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    @include size (1px, 1px);
+    overflow:hidden;
+  }

@@ -1,0 +1,50 @@
+@mixin display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin margin-left ($ml) {
+    margin-left:$ml;
+}
+
+@mixin flex-basis ($fb: 100%){
+    flex-basis: $fb;
+}
+
+@mixin font ($fs, $fw, $fsty) {
+    font-size:$fs;
+    font-weight:$fw;
+    font-style:$fsty;
+}
+
+@mixin form-display ($disp, $w, $pad, $marg) {
+    display: $disp;
+    width:$w;
+    padding: $pad;
+    margin:$marg;
+}
+
+@mixin border($bord:null, $b-bord:null){
+    border: $bord;
+    border-bottom: $b-bord;
+}
+
+@mixin size ($w:null, $h:null) {
+    width:$w;
+    height:$h;
+}
+
+@mixin margin($top: null, $right: null, $bottom: null, $left: null){
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+    padding-top: $top;    
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left ;
+}
