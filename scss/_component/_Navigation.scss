@@ -1,7 +1,3 @@
-//line height//
-$paragraphs: 1.45em;
-
-
 .nav {
     padding-left: 0;
     flex-basis: 100%;
@@ -12,9 +8,8 @@ $paragraphs: 1.45em;
       justify-content: flex-end;
       align-items: center;
     }
-  }
   
-  .nav-link {
+  &-link {
     text-align: center;
     border-radius: $border-radius;
     padding: 10px 0;
@@ -33,5 +28,5 @@ $paragraphs: 1.45em;
     @media (min-width: 768px) {
       @include flex-basis;
     }
-      
+  }
   }

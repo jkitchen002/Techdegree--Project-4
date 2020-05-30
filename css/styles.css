@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-/* line 11, ../Project 4/scss/_base/_normalize.scss */
 html {
   line-height: 1.15;
   /* 1 */
@@ -18,7 +17,6 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-/* line 23, ../Project 4/scss/_base/_normalize.scss */
 body {
   margin: 0;
 }
@@ -26,7 +24,6 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-/* line 31, ../Project 4/scss/_base/_normalize.scss */
 main {
   display: block;
 }
@@ -35,7 +32,6 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 40, ../Project 4/scss/_base/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -47,9 +43,9 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 53, ../Project 4/scss/_base/_normalize.scss */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -61,7 +57,6 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 64, ../Project 4/scss/_base/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -74,7 +69,6 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-/* line 76, ../Project 4/scss/_base/_normalize.scss */
 a {
   background-color: transparent;
 }
@@ -83,20 +77,19 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 85, ../Project 4/scss/_base/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 95, ../Project 4/scss/_base/_normalize.scss */
 b,
 strong {
   font-weight: bolder;
@@ -106,7 +99,6 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 105, ../Project 4/scss/_base/_normalize.scss */
 code,
 kbd,
 samp {
@@ -119,7 +111,6 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 116, ../Project 4/scss/_base/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -128,7 +119,6 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 125, ../Project 4/scss/_base/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -137,12 +127,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 133, ../Project 4/scss/_base/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 137, ../Project 4/scss/_base/_normalize.scss */
 sup {
   top: -0.5em;
 }
@@ -152,7 +140,6 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-/* line 148, ../Project 4/scss/_base/_normalize.scss */
 img {
   border-style: none;
 }
@@ -163,7 +150,6 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 160, ../Project 4/scss/_base/_normalize.scss */
 button,
 input,
 optgroup,
@@ -183,7 +169,6 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 176, ../Project 4/scss/_base/_normalize.scss */
 button,
 input {
   /* 1 */
@@ -194,7 +179,6 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 186, ../Project 4/scss/_base/_normalize.scss */
 button,
 select {
   /* 1 */
@@ -204,7 +188,6 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 195, ../Project 4/scss/_base/_normalize.scss */
 button,
 [type="button"],
 [type="reset"],
@@ -215,7 +198,6 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 206, ../Project 4/scss/_base/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -227,7 +209,6 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 218, ../Project 4/scss/_base/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -238,7 +219,6 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-/* line 229, ../Project 4/scss/_base/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -249,9 +229,9 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 240, ../Project 4/scss/_base/_normalize.scss */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -268,7 +248,6 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 253, ../Project 4/scss/_base/_normalize.scss */
 progress {
   vertical-align: baseline;
 }
@@ -276,7 +255,6 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-/* line 261, ../Project 4/scss/_base/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -285,10 +263,10 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-/* line 270, ../Project 4/scss/_base/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -297,7 +275,6 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 280, ../Project 4/scss/_base/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -307,7 +284,6 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 290, ../Project 4/scss/_base/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -318,7 +294,6 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* line 299, ../Project 4/scss/_base/_normalize.scss */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -327,7 +302,6 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 308, ../Project 4/scss/_base/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -340,7 +314,6 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-/* line 320, ../Project 4/scss/_base/_normalize.scss */
 details {
   display: block;
 }
@@ -348,7 +321,6 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 328, ../Project 4/scss/_base/_normalize.scss */
 summary {
   display: list-item;
 }
@@ -358,7 +330,6 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-/* line 339, ../Project 4/scss/_base/_normalize.scss */
 template {
   display: none;
 }
@@ -366,30 +337,26 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-/* line 347, ../Project 4/scss/_base/_normalize.scss */
 [hidden] {
   display: none;
 }
 
-/* line 1, ../Project 4/scss/_component/_Base-styles.scss */
 * {
   font-family: "Lato", sans-serif;
   color: #777;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* line 7, ../Project 4/scss/_component/_Base-styles.scss */
 p {
   line-height: 1.45em;
 }
 
-/* line 11, ../Project 4/scss/_component/_Base-styles.scss */
 a {
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
-  /* line 16, ../Project 4/scss/_component/_Base-styles.scss */
   .centered {
     display: block;
     margin-left: auto;
@@ -397,7 +364,6 @@ a {
   }
 }
 
-/* line 1, ../Project 4/scss/_component/_Buttons.scss */
 .btn {
   border: none;
   width: 100%;
@@ -410,127 +376,106 @@ a {
   border-radius: 5px;
 }
 
-/* line 12, ../Project 4/scss/_component/_Buttons.scss */
 .btn.default {
   background-color: #51ddfc;
 }
 
-/* line 14, ../Project 4/scss/_component/_Buttons.scss */
 .btn.default:hover {
   background-color: #9cecfd;
 }
 
-/* line 17, ../Project 4/scss/_component/_Buttons.scss */
 .btn.default:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  /* line 12, ../Project 4/scss/_component/_Buttons.scss */
   .btn.default {
     padding-top: 10px;
     padding-right: 30px;
   }
 }
 
-/* line 12, ../Project 4/scss/_component/_Buttons.scss */
 .btn.error {
   background-color: #e4757a;
 }
 
-/* line 14, ../Project 4/scss/_component/_Buttons.scss */
 .btn.error:hover {
   background-color: #f1b5b8;
 }
 
-/* line 17, ../Project 4/scss/_component/_Buttons.scss */
 .btn.error:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  /* line 12, ../Project 4/scss/_component/_Buttons.scss */
   .btn.error {
     padding-top: 10px;
     padding-right: 30px;
   }
 }
 
-/* line 12, ../Project 4/scss/_component/_Buttons.scss */
 .btn.info {
   background-color: #927bc1;
 }
 
-/* line 14, ../Project 4/scss/_component/_Buttons.scss */
 .btn.info:hover {
   background-color: #bdafd9;
 }
 
-/* line 17, ../Project 4/scss/_component/_Buttons.scss */
 .btn.info:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  /* line 12, ../Project 4/scss/_component/_Buttons.scss */
   .btn.info {
     padding-top: 10px;
     padding-right: 30px;
   }
 }
 
-/* line 12, ../Project 4/scss/_component/_Buttons.scss */
 .btn.success {
   background-color: #63cc82;
 }
 
-/* line 14, ../Project 4/scss/_component/_Buttons.scss */
 .btn.success:hover {
   background-color: #9ddfb0;
 }
 
-/* line 17, ../Project 4/scss/_component/_Buttons.scss */
 .btn.success:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  /* line 12, ../Project 4/scss/_component/_Buttons.scss */
   .btn.success {
     padding-top: 10px;
     padding-right: 30px;
   }
 }
 
-/* line 12, ../Project 4/scss/_component/_Buttons.scss */
 .btn.warning {
   background-color: #fd7856;
 }
 
-/* line 14, ../Project 4/scss/_component/_Buttons.scss */
 .btn.warning:hover {
   background-color: #feb4a2;
 }
 
-/* line 17, ../Project 4/scss/_component/_Buttons.scss */
 .btn.warning:focus {
   outline: none;
 }
 
 @media (min-width: 768px) {
-  /* line 12, ../Project 4/scss/_component/_Buttons.scss */
   .btn.warning {
     padding-top: 10px;
     padding-right: 30px;
   }
 }
 
-/* line 1, ../Project 4/scss/_component/_Forms.scss */
 .form {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-/* line 5, ../Project 4/scss/_component/_Forms.scss */
 .input {
   display: block;
   width: 94%;
@@ -540,12 +485,10 @@ a {
   border-bottom: 5px solid #63cc82;
 }
 
-/* line 8, ../Project 4/scss/_component/_Forms.scss */
 .input:focus {
   outline: none;
 }
 
-/* line 13, ../Project 4/scss/_component/_Forms.scss */
 .hidden {
   position: absolute;
   left: -10000px;
@@ -555,182 +498,178 @@ a {
   overflow: hidden;
 }
 
-/* line 1, ../Project 4/scss/_component/_Grid-System.scss */
 .container {
   padding-right: 10px;
   padding-left: 10px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-  /* line 1, ../Project 4/scss/_component/_Grid-System.scss */
   .container {
     max-width: 1400px;
   }
 }
 
-/* line 8, ../Project 4/scss/_component/_Grid-System.scss */
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 1em 10px;
 }
 
 @media (min-width: 768px) {
-  /* line 8, ../Project 4/scss/_component/_Grid-System.scss */
   .row {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-1 {
-  flex-basis: 8.33%;
+  -ms-flex-preferred-size: 8.33%;
+      flex-basis: 8.33%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-2 {
-  flex-basis: 16.67%;
+  -ms-flex-preferred-size: 16.67%;
+      flex-basis: 16.67%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-3 {
-  flex-basis: 25%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-4 {
-  flex-basis: 33.33%;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-5 {
-  flex-basis: 41.67%;
+  -ms-flex-preferred-size: 41.67%;
+      flex-basis: 41.67%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-6 {
-  flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-7 {
-  flex-basis: 58.33%;
+  -ms-flex-preferred-size: 58.33%;
+      flex-basis: 58.33%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-8 {
-  flex-basis: 66.67%;
+  -ms-flex-preferred-size: 66.67%;
+      flex-basis: 66.67%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-9 {
-  flex-basis: 75%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-10 {
-  flex-basis: 83.33%;
+  -ms-flex-preferred-size: 83.33%;
+      flex-basis: 83.33%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-11 {
-  flex-basis: 91.67%;
+  -ms-flex-preferred-size: 91.67%;
+      flex-basis: 91.67%;
 }
 
-/* line 16, ../Project 4/scss/_component/_Grid-System.scss */
 .row .col-12 {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-/* line 22, ../Project 4/scss/_component/_Grid-System.scss */
 [class^=col] {
   margin-top: 10px;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
 }
 
 @media (min-width: 768px) {
-  /* line 22, ../Project 4/scss/_component/_Grid-System.scss */
   [class^=col] {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  /* line 33, ../Project 4/scss/_component/_Grid-System.scss */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-1 {
   background-color: #927bc1;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-2 {
   background-color: #fd7856;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-3 {
   background-color: #deb2ee;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-4 {
   background-color: #7ee6fd;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-5 {
   background-color: #88d9a0;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-6 {
   background-color: #4da2bb;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-7 {
   background-color: #ec9fa3;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-8 {
   background-color: #fd9f85;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-9 {
   background-color: #e4757a;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-10 {
   background-color: #63cc82;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-11 {
   background-color: #51ddfc;
 }
 
-/* line 40, ../Project 4/scss/_component/_Grid-System.scss */
 .theme.col-12 {
   background-color: #80e8d1;
 }
 
-/* line 45, ../Project 4/scss/_component/_Grid-System.scss */
 .card {
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
-/* line 1, ../Project 4/scss/_component/_Images.scss */
 .img-avatar {
   display: block;
   margin-left: auto;
@@ -738,15 +677,15 @@ a {
   margin-top: 10px;
   max-width: 100%;
   max-height: 100%;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
-/* line 7, ../Project 4/scss/_component/_Images.scss */
 .img-avatar:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-/* line 12, ../Project 4/scss/_component/_Images.scss */
 .img-frame {
   display: block;
   margin-left: auto;
@@ -757,12 +696,11 @@ a {
   border: 1px solid #ccc;
 }
 
-/* line 18, ../Project 4/scss/_component/_Images.scss */
 .img-frame:hover {
-  transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 
-/* line 23, ../Project 4/scss/_component/_Images.scss */
 .img-logo {
   display: block;
   margin-left: auto;
@@ -770,80 +708,84 @@ a {
 }
 
 @media (min-width: 768px) {
-  /* line 23, ../Project 4/scss/_component/_Images.scss */
   .img-logo {
     margin-left: initial;
     margin-right: initial;
   }
 }
 
-/* line 5, ../Project 4/scss/_component/_Navigation.scss */
 .nav {
   padding-left: 0;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 768px) {
-  /* line 5, ../Project 4/scss/_component/_Navigation.scss */
   .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-/* line 17, ../Project 4/scss/_component/_Navigation.scss */
 .nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
   display: block;
   width: 100%;
+  -webkit-transition: background-color .2s ease-in-out,  color .2s ease-in-out;
   transition: background-color .2s ease-in-out,  color .2s ease-in-out;
 }
 
-/* line 26, ../Project 4/scss/_component/_Navigation.scss */
 .nav-link:visited {
   color: #d0d0d0;
 }
 
-/* line 29, ../Project 4/scss/_component/_Navigation.scss */
 .nav-link:hover {
   color: #fff;
   background-color: #777;
 }
 
 @media (min-width: 768px) {
-  /* line 17, ../Project 4/scss/_component/_Navigation.scss */
   .nav-link {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
-/* line 5, ../Project 4/scss/_component/_Typography.scss */
 .headline-primary {
   color: #777;
   margin-left: 10px;
 }
 
-/* line 10, ../Project 4/scss/_component/_Typography.scss */
 .headline-secondary {
   font-weight: 300;
   color: #fd7856;
 }
 
-/* line 20, ../Project 4/scss/_component/_Typography.scss */
 .link {
   color: #51ddfc;
   font-weight: 700;
 }
 
-/* line 25, ../Project 4/scss/_component/_Typography.scss */
 .blockquote {
   font-size: 1.5em;
   font-weight: 700;
@@ -854,5 +796,4 @@ a {
   border-left: 8px solid #927bc1;
   border-radius: 5px;
 }
-
 /*# sourceMappingURL=styles.css.map */
