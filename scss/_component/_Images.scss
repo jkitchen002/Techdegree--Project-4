@@ -22,7 +22,7 @@
   
   .img-logo {
     @include display;
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-m) {
       @include margin-left (initial);
       margin-right: initial;
     }

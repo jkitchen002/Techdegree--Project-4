@@ -1,8 +1,8 @@
   .container {
-    @include padding($right: 10px, $left: 10px);
+    @include padding($right: 40px, $left: 40px);
     margin: 0 auto;
-    @media (min-width: 768px) {
-        max-width: 1400px;
+    @media (min-width: $breakpoint-m) {
+        max-width: 1200px;
       }
   }
   
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-m) {
       flex-direction: row;
     }
     @each $grid, $flex-b in $flex-basis{
@@ -26,7 +26,7 @@
     min-height: 25px;
     padding: 10px;
     border-radius: $border-radius;
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-m) {
       display: flex;
       justify-content: center;
       margin-top: 0;

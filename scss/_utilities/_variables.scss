@@ -39,6 +39,14 @@ $grid-colors:(
     '.col-12': #80e8d1,
 );
 
+
+//media query//
+
+$breakpoint-s: 640px;
+$breakpoint-m: 768px;   
+$breakpoint-l: 1024px;
+$breakpoint-xl: 1200px;
+
 $flex-basis:(
     '.col-1': 8.33%,
     '.col-2': 16.67%,
@@ -53,6 +61,8 @@ $flex-basis:(
     '.col-11': 91.67%,      
     '.col-12': 100%,
 );
+
+
 
 
 
